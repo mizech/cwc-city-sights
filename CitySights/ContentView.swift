@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  CitySights
-//
-//  Created by Michael on 26.01.25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
