@@ -19,7 +19,6 @@ struct ContentView: View {
         }
         .padding()
         .onAppear() {
-            
             if let info = Bundle.main.infoDictionary {
                 print(info["API_KEY"] as? String)
             }
