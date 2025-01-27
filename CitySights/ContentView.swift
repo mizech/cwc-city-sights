@@ -1,5 +1,6 @@
 import SwiftUI
 
+// faKB45mO0JBidk1fHKzFsy0PwRXovX96pyLhGzI3P8wCIK20y_flU6pKpSbjD7VPf09MF0iVW9pxJdZUjDJBA0X9jRn5S_Mfd-l14v8pA9L6f1hIZ5TG5daMqWdyZ3Yx
 struct ContentView: View {
     @State var query = ""
     
@@ -17,6 +18,12 @@ struct ContentView: View {
 
         }
         .padding()
+        .onAppear() {
+            
+            if let info = Bundle.main.infoDictionary {
+                print(info["API_KEY"] as? String)
+            }
+        }
     }
 }
 
