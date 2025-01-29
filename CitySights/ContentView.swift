@@ -21,7 +21,7 @@ struct ContentView: View {
             
             List(businesses) { biz in
                 Text(biz.name ?? "Not given")
-            }
+            }.listStyle(.plain)
         }
         .padding()
         .task {
